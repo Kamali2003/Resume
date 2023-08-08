@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#ff7613;
+    --text-color:#727171;
+
+}
+html{
+    font-size:10px;
+}
+
+body{
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+img{
+    width:100%;
+    border-radius: 50%;
+    
+}
+
+.description{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:var(--text-color);
+}
+
+
+.title {
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.i_p {
+	font-size: 1.4rem;
+	color: var(--text-color);
+	font-weight: 300;
+}
+
+.item_title {
+	font-size: 1.6rem;
+	color: white;
+	font-weight: 500;
+	margin: 0.8rem 0;
+}
+
+.item_subtitle {
+	font-size: 1.4rem;
+	color: var(--text-color);
+	font-weight: 400;
+}
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 1rem;
+    background-color: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
+}
+
+@media only screen and (max-width:768px){
+    .container{
+        width:50%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+
+}
+.profile{
+    grid-column: 1/ -1;
+    margin-bottom: 2rem;
+}
+
+.group1{
+	display: flex;
+	flex-direction:column;
+	gap: 5rem;
+    top:300px;
+    float: left;
+    float:inline-start;
+    position: absolute;
+
+}
+.group2{
+	display: flex;
+	flex-direction:column;
+    padding-top: 0%;
+    float: right;
+    float:inline-start;
+    position: absolute;
+    top:300px;
+    left:50%;
+
+
+    margin-top:0%;
+	gap: 5rem;
+}
+.group3 {
+    display: flex;
+    flex-direction:row;
+    position: absolute;
+    padding-top: 0%;
+    margin-top:0%;
+    float: right;
+    float:inline-start;
+    top:800px;
+    left: 50%;
+    gap: 5rem;
+
+    
+}
+.group3 > div {
+	flex: 1;
+}
+
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+
+.profile_profileImg{
+    max-width: 250px;
+}
+
+.first{
+    color:var(--primary-color);
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+
+.second{
+    color:white;
+    font-weight: 500;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+    
+}
+
+.profile_title{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:768px){
+    .profile_container{
+        flex-direction: column;
+        width:100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+
+}
+
+.sl  {
+    margin-top:  1rem;
+    margin-left: 2rem;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.l2{
+    margin-top:  1rem;
+    margin-left: 2rem;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.pskills{
+    margin-top:  1rem;
+    margin-left: 2rem;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.hobby{
+    margin-top:  1rem;
+    margin-left: 2rem;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.cer{
+    margin-top:  1rem;
+    margin-left: 2rem;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+
+
+.edu_item{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+   
+   
+}
+
+
+.awards_item{
+    margin-top:  2rem;
+    font-size: 1.5rem;
+    
+}
+
+.social_items {
+	margin-top: 2rem;
+    gap:5rem;
+}
+.social_item {
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	gap: 5rem;
+	align-items: center;
+	justify-content: flex-start;
+	color: var(--text-color);
+}
+.social_item:hover {
+	color: var(--primary-color);
+}
+
+.social_item svg {
+	width: 2rem;
+}
